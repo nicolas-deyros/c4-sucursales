@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> partials/gtm.head}}
+  <title>{{ htmlWebpackPlugin.options.title }}</title>
+  {{> partials/opg}}
+</head>
+
+<body>
+  <div class="flex flex-col h-screen">
+    {{> partials/header}}
+    <main class="bg-blue-800 flex-1 overflow-y-auto px-2">
+      <div id="wrapper" class="container mx-auto"></div>
+    </main>
+    {{> partials/footer}}
+  </div>
+</body>
+
+</html>
